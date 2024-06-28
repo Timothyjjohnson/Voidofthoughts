@@ -1,0 +1,48 @@
+#include <iostream>
+#include <fstream>
+#include <map>
+
+int main () {
+    std::map<std::string, int> itemFrequencies;
+
+    // populate the itemFrequencies map w/ the item frequencies
+    itemFrequencies["Potatoes"] = 5;
+    itemFrequencies["Cucumbers"] = 9;
+    itemFrequencies["Peaches"] = 5;
+    itemFrequencies["Zucchini"] = 10;
+    itemFrequencies["Cantaloupe"] = 2;
+    itemFrequencies["Beets"] = 3;
+    itemFrequencies["Cauliflower"] = 6;
+    itemFrequencies["Onions"] = 4;
+    itemFrequencies["Yams"] = 5;
+    itemFrequencies["Apples"] = 4;
+    itemFrequencies["Spinach"] = 5;
+    itemFrequencies["Radishes"] = 3;
+    itemFrequencies["Broccoli"] = 5;
+    itemFrequencies["Peas"] = 8;
+    itemFrequencies["Cranberries"] = 10;
+    itemFrequencies["Celery"] = 6;
+    itemFrequencies["Limes"] = 1;
+    itemFrequencies["Garlic"] = 8;
+    itemFrequencies["Pumpkins"] = 2;
+    itemFrequencies["Pears"] =1;
+
+    // create & open the output file
+    std::ofstream outputFile("frequency.dat");
+    if (!outputFile.is_open()) {
+        std::cout << "Error opening the file." << std::endl;
+        return 1;
+    }
+
+    // write item frequencies to the file
+    for (const auto& pair : itemFrequencies) {
+        outputFile << pair.first << " " << pair.second << std::endl;
+    }
+
+    // close the output file
+    outputFile.close();
+
+    std::cout << "Data file have been created successfully." << std::endl;
+
+    return 0;
+}
