@@ -1,5 +1,5 @@
 1. Summarize the project and what problem it was solving.
-  Answe: The project aimed to create a program for the Corner Grocer to analyze item purchase data, helping them optimize their store layout based on item frequencies throughout the day.
+  Answer: The project aimed to create a program for the Corner Grocer to analyze item purchase data, helping them optimize their store layout based on item frequencies throughout the day.
 2. What did you do particularly well?
   Answer: I effectively implemented the menu-driven interface and file handling operations. Using C++ classes and maps allowed me to organize data logically and efficiently.
 3. Where could you enhance your code? How would these improvements make your code more efficient, secure, and so on?
